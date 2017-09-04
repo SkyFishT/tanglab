@@ -1,0 +1,43 @@
+<div id="nav" style="min-height: 200px">
+   <ul class="nav">
+   <li class="drop_down"><div>关于我们</div>
+        <ul class="drop_down_content">
+           <li><div><a href="{% url 'about' %}">概况</a></div></li>
+           <li><div><a href="{% url 'members' %}">团队人员</a></div></li>
+           <li><div><a href="{% url 'contact' %}">联系我们</a></div></li>
+       </ul>
+   </li>
+   <li class="drop_down"><div>最新消息</div>
+       <ul class="drop_down_content">
+           <li><div><a href="{% url 'achievement' %}">最新成果</a></div></li>
+           <li><div><a href="{% url 'information' %}">学术咨询</a></div></li>
+       </ul>
+   </li>
+   <li class="drop_down"><div>学术研究</div>
+        <ul class="drop_down_content">
+           <li><div><a href="{% url 'theses' %}">论文清单</a></div></li>
+           <li><div><a href="{% url 'patents' %}">专利清单</a></div></li>
+           <li><div><a href="{% url 'acad_achievement' %}">学术成果</a></div></li>
+           <li><div><a href="{% url 'sci_project' %}">科研项目</a></div></li>
+       </ul>
+   </li>
+   <li class="drop_down"><div>教学与培养</div>
+        <ul class="drop_down_content">
+           <li><div><a href="{% url 'in_reading' %}">在读学生名单</a></div></li>
+           <li><div><a href="{% url 'graduates' %}">毕业学生名单</a></div></li>
+       </ul>
+   </li>
+   <li class="drop_down"><div>他山之石</div>
+        <ul class="drop_down_content">
+           <li><div><a href="{% url 'acad_experience' %}">学术心得转载</a></div></li>
+           <li><div><a href="{% url 'edu_experience' %}">人才培养心得转载</a></div></li>
+       </ul>
+   </li>
+   <li class="drop_down"><div>校园生活</div>
+        <ul class="drop_down_content">
+           <li><div><a href="{% url 'ent_activity' %}">文娱活动剪影</a></div></li>
+           <li><div><a href="{% url 'acad_activity' %}">学术活动剪影</a></div></li>
+       </ul>
+    </li>
+   </ul>
+</div>

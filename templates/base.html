@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}默认标题{% endblock %} - 唐韶华的实验室</title>
+</head>
+{% include 'theme.html' %}
+<body>
+{% include 'nav.html' %}
+<div style="clear:both"></div>
+{% block content %}
+默认内容
+{% endblock %}
+</body>
+</html>
