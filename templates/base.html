@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 62.5%">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/theme.css">
     <title>{% block title %}默认标题{% endblock %} - 唐韶华的实验室</title>
 </head>
-{% include 'theme.html' %}
 <body>
+{% block nav %}
 {% include 'nav.html' %}
-<div style="clear:both"></div>
-{% block content %}
-默认内容
 {% endblock %}
+<div id="content" >
+    <div id="position">
+        当前位置：
+    </div>
+    <div id="menu">
+        <ul class="ul_menu">
+        </ul>
+    </div>
+    <div id="details">
+        {% block content %}
+            默认内容
+        {% endblock %}
+    </div>
+</div>
+<script src="/static/js/layout.js">
+</script>
 </body>
 </html>

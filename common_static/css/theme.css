@@ -1,0 +1,32 @@
+body{width: 96rem;text-align: center;}
+a{text-decoration: none;}
+
+#nav{margin: 4rem auto; width: 60rem;height: 10rem;}
+#admin_nav{margin: 4rem auto; width: 60rem;height: 10rem;}
+#admin_nav ul li div a:link{color: black}
+#admin_nav ul li div a:visited{color: black}
+#admin_nav ul li div a:hover{color: grey}
+#content{margin: 4rem auto; width: 60rem; _height:20rem;min-height: 20rem }
+#menu{float: left;width: 10rem }
+#details{width: 50rem;margin-left: 10rem;_height:20rem;min-height: 20rem}
+#position{font-size: 0.7rem;text-align: left}
+#position a{color: black}
+#position a:visited{color: black}
+#position a:hover{color: grey}
+
+.ul_menu{list-style: none;padding: 0;margin: 2rem 0;text-align: left;}
+.ul_menu>li{font-size: 0.75rem;}
+.ul_menu>li:first-child{margin-top: 1rem}
+.abs{position: absolute;}
+.ul_nav{list-style: none;padding: 0rem;}
+.li_nav{float: left;text-align: center;width: 10rem}
+.li_nav>div{background: lightskyblue;width: 10rem;}
+.ul_nav_content{list-style: none;padding: 0rem;display: none;}
+.ul_nav_content>li{white-space:nowrap;}
+.ul_nav_content>li div{width: 8rem;text-align: center;margin: auto;width: 8rem;background-color: darkgray}
+.ul_nav_content>li div a:link{text-decoration: none;color: white}
+.ul_nav_content>li div a:visited{color: white}
+.ul_nav_content>li div a:hover{color: red}
+.li_nav:hover .ul_nav_content{display: block;}
+
+
