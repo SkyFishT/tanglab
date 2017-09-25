@@ -4,6 +4,10 @@
 管理主页
 {% endblock %}
 
+{% block app_theme %}
+    <link rel="stylesheet" type="text/css" href="/static/css/admin_theme.css">
+{% endblock %}
+
 {% block nav %}
 {% include 'administration/admin_nav.html' %}
 {% endblock %}

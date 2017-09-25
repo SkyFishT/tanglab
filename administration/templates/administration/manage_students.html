@@ -1,9 +1,61 @@
-{% extends 'administration/admin_page.html'%}
+{% extends 'administration/admin_home.html' %}
 
 {% block title %}
 人才管理
 {% endblock %}
 
 {% block content %}
-人才管理
+
+    <div id="div_graduates"><h2>人才管理</h2><button id="btn_stu_add" onclick="btn_stu_add()">添加学生信息</button>
+        <table id="table_graduates">
+            <tr>
+                <th>姓名</th>
+                <th>在读</th>
+                <th>入学年份</th>
+                <th>学历</th>
+                <th>所在地</th>
+                <th>公司</th>
+                <th>手机号</th>
+                <th>e-mail</th>
+                <th>QQ</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {% for item in students %}
+                <tr>
+                    <td>
+                        <div>{{ item.name }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.in_reading }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.enrollment }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.degree }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.position }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.company }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.phone_number }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.Email }}</div>
+                    </td>
+                    <td>
+                        <div>{{ item.QQ }}</div>
+                    </td>
+                    <td><button id="btn_stu_del" onclick="btn_stu_del()">删除</button></td>
+                    <td><button>修改</button></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <script src="/static/js/layout.js">
+</script>
 {% endblock %}

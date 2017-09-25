@@ -54,14 +54,12 @@ else if (path_nums.length == 3) {//当Path为/path1/path2时，path_nums被'/'�
 
 //菜单创建与添加
 if (path_nums.length == 3) {
-    var ul_menu = document.getElementsByClassName("ul_menu");
+    var ul_menu = document.getElementsByClassName("ul_menu");//获得类为ul_menu的集合
     var ul_menu_a = document.createElement("a");
     var ul_menu_div = document.createElement("div");
     ul_menu_a.innerHTML = menu[path_nums[1]];
-     ul_menu_div.appendChild(ul_menu_a);
-    if (path_nums[1] == "admin") ul_menu_a.setAttribute("href", cur_href.substring(0, cur_href.length - cur_path.length) + "/admin");
-    else ul_menu_a.setAttribute("href", cur_href.substring(0, cur_href.length - cur_path.length));
-    ul_menu[0].appendChild(ul_menu_a);
+    ul_menu_div.appendChild(ul_menu_a);
+    ul_menu[0].appendChild(ul_menu_div);//ul_menu结构为ul_menu包含ul_menu_div包含ul_menu_a
 
     for (index in sub_menus[path_nums[1]]) {
         var li_menu_a = document.createElement("a");
@@ -77,7 +75,7 @@ if (path_nums.length == 3) {
 
 //主页取消位置与菜单
 
-if (path_nums.length == 2) {//当Path为/path1时，path_nums被'/'分成2部分
+if (path_nums.length == 2) {//当Path为'/path1'或者'/'时，path_nums被'/'分成2部分
     document.getElementById("position").style.display = "none";
     document.getElementById("menu").style.display = "none";
     document.getElementById("details").style.width = "60rem";

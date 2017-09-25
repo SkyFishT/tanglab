@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
 
+{% block app_theme %}
+    <link rel="stylesheet" type="text/css" href="static/css/home_theme.css">
+{% endblock %}
+
 {% block title %}首页{% endblock %}
 
 {% block content %}
-首页内容
+<div id="home_pic"></div>
+<div id="home_msg"><div>新闻</div>
+    <ul><div>{{ home_msg }}</div>
+        {% for msgs in home_msg %}
+            <li>{{ msgs }}</li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}

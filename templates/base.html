@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/static/css/theme.css">
     <title>{% block title %}默认标题{% endblock %} - 唐韶华的实验室</title>
+{% block app_theme %}
+{% endblock %}
 </head>
 <body>
 {% block nav %}
@@ -23,7 +25,9 @@
         {% endblock %}
     </div>
 </div>
-<script src="/static/js/layout.js">
+<script src="/static/js/admin_io.js">
 </script>
+{% block app_sp %}
+{% endblock %}
 </body>
 </html>
