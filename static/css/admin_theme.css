@@ -1,0 +1,12 @@
+/*admin主题设置*/
+/* id选择器*/
+#admin_nav{margin: 4rem auto; width: 60rem;height: 10rem;}
+#admin_nav ul li div a:link{color: black}
+#admin_nav ul li div a:visited{color: black}
+#admin_nav ul li div a:hover{color: grey}
+#div_graduates table{table-layout: fixed;width: 50rem}
+#div_graduates div{width: 100%;overflow: auto;}
+#div_graduates button{font-size: 1rem;}
+#btn_stu_add{position:absolute;left:66rem;top:20.5rem;}
+/*类选择器*/
+
