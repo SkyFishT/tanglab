@@ -10,7 +10,7 @@ a{text-decoration: none;}
 #nav{margin: 4rem auto; width: 60rem;height: 10rem;}
 #content{margin: 4rem auto; width: 60rem; _height:20rem;min-height: 20rem }
 #menu{float: left;width: 10rem;position: fixed;}
-#details{width: 50rem;margin-left: 10rem;_height:200rem;min-height: 200rem}
+#details{width: 50rem;margin-left: 10rem;_height:200rem;min-height: 200rem;text-align: center}
 #position{font-size: 0.7rem;text-align: left}
 #position a{color: black}
 #position a:visited{color: black}
