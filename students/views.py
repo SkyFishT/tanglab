@@ -5,10 +5,10 @@ from students.models import Students
 # Create your views here.
 
 def in_reading(request):
-    in_reading = Students.objects.filter(in_reading="TRUE")
+    in_reading = Students.objects(in_reading="TRUE")
     print(type(Students.objects))
     return render(request,'students/in_reading.html',{'in_reading':in_reading})
 
 def graduates(request):
-    graduates = Students.objects.filter(in_reading="FALSE")
+    graduates = Students.objects(in_reading="FALSE")
     return render(request,'students/graduates.html',{'graduates':graduates})
