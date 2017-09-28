@@ -5,9 +5,11 @@
 {% endblock %}
 
 {% block pop_layer %}
-    <div id="stu_edit">
-        <form class="form_list" method="post" action="">{% csrf_token %}
+    <div id="pop_layer">
+        <form id="form_stu_edit" class="form_list" method="post" action="">{% csrf_token %}
             {{ StuForm }}
+            <input type="submit" value="submit"/>
+            <input type="text" value="" name="which_button" id="which_button" style="display: none"/>
         </form>
     </div>
 {% endblock %}
@@ -64,7 +66,7 @@
                         <button id="btn_stu_del" onclick="btn_stu_del()">删除</button>
                     </td>
                     <td>
-                        <button>修改</button>
+                        <button onclick="btn_stu_change()">修改</button>
                     </td>
                 </tr>
             {% endfor %}

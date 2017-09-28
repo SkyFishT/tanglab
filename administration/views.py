@@ -17,13 +17,14 @@ def manage_achievement(request):
     return render(request,'administration/manage_achievement.html')
 
 def manage_students(request):
+    stu = Students.objects.all()
     if request.method == 'POST':
         form = StuForm(request.POST)
         if form.is_valid():
-            return render(request, 'administration/manage_students.html', {'StuForm':form})
+            return render(request, 'administration/manage_students.html', {'students':stu,'StuForm':form})
     else:
         form = StuForm()
-    return render(request,'administration/manage_students.html',{'StuForm':form})
+    return render(request,'administration/manage_students.html',{'students':stu,'StuForm':form})
 
 def manage_experience(request):
     return render(request,'administration/manage_experience.html')
