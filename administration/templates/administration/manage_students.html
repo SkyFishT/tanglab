@@ -9,7 +9,6 @@
         <form id="form_stu_edit" class="form_list" method="post" action="">{% csrf_token %}
             {{ StuForm }}
             <input type="submit" value="submit"/>
-            <input type="text" value="" name="which_button" id="which_button" style="display: none"/>
         </form>
     </div>
 {% endblock %}
@@ -18,7 +17,6 @@
     <div id="div_graduates">
         <h2>人才管理</h2>
         <button id="btn_stu_add" onclick="btn_stu_add()">添加学生信息</button>
-
         <table id="table_graduates">
             <tr>
                 <th>姓名</th>
@@ -54,7 +52,7 @@
                         <div>{{ item.company }}</div>
                     </td>
                     <td>
-                        <div>{{ item.phone_number }}</div>
+                        <div    >{{ item.phone_number }}</div>
                     </td>
                     <td>
                         <div>{{ item.Email }}</div>
@@ -63,10 +61,10 @@
                         <div>{{ item.QQ }}</div>
                     </td>
                     <td>
-                        <button id="btn_stu_del" onclick="btn_stu_del()">删除</button>
+                        <button id="btn_stu_del" onclick="btn_stu_del(event)">删除</button>
                     </td>
                     <td>
-                        <button onclick="btn_stu_change()">修改</button>
+                        <button onclick="btn_stu_change(event)">修改</button>
                     </td>
                 </tr>
             {% endfor %}

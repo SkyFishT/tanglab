@@ -12,6 +12,4 @@ urlpatterns = [
     url(r'^manage_experience', manage_experience, name='manage_experience'),
     url(r'^manage_activity', manage_activity, name='manage_activity'),
     url(r'^manage_activity', manage_activity, name='manage_activity'),
-    #form提交
-    url(r'^form_edit',form_edit,name='form_edit'),
 ]
