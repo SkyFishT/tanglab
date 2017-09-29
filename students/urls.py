@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import *
+from students.views import *
 
 urlpatterns = [
 url(r'^in_reading', in_reading, name='in_reading'),

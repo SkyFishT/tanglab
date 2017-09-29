@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import *
+from about.views import *
 
 urlpatterns = [
 url(r'^about/', about, name='about'),

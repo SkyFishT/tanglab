@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*"
 from django.shortcuts import render
 from students.models import Students
-from forms import StuForm
+from administration.forms import StuForm
 
 
 # Create your views here.

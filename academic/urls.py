@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import *
+from academic.views import *
 
 urlpatterns = [
 url(r'^acad_achievement', acad_achievement, name='acad_achievement'),

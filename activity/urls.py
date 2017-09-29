@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import *
+from activity.views import *
 
 urlpatterns = [
 url(r'^ent_activity', ent_activity, name='ent_activity'),

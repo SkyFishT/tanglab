@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*
 from django.conf.urls import url
-from views import *
+from administration.views import *
 
 urlpatterns = [
     #页面响应
