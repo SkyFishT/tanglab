@@ -5,8 +5,14 @@
 #admin_nav ul li div a:visited{color: black}
 #admin_nav ul li div a:hover{color: grey}
 #div_graduates table{table-layout: fixed;width: 50rem}
-#div_graduates div{width: 100%;overflow: auto;}
+#div_graduates>table div{width: 100%;overflow: auto;}
 #div_graduates button{font-size: 1rem;}
 #btn_stu_add{position:absolute;left:66rem;top:20.5rem;}
+#pop_layer{position:fixed;text-align: center;width: 96rem;background-color: white;display: none;}
+#form_stu_edit {width: 25rem;margin: 10rem auto }
 /*类选择器*/
-
+.form_list{margin: auto;text-align: center}
+.form_list span{margin: auto;display: block;width: 22rem;height: 2.1rem;margin: 0.2rem 0rem}
+.form_list label,input{display:inline-block;font-size: 0.8rem}
+.form_list label{width: 5rem;margin: 0.1rem;height:2rem }
+.form_list input{width: 15rem;padding: 0;margin:0rem;height: 2rem;text-align: center}
