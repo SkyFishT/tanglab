@@ -1,7 +1,11 @@
 td{width:10rem;white-space: nowrap;}
 
-#div_graduates{width:50rem;text-align: center;position: absolute}
+#div_graduates {width:50rem;text-align: center;position: absolute}
 #div_graduates table{margin: auto;width: 20rem;table-layout: fixed}
 #div_graduates div{width: 100%;overflow: auto}
+
+#div_in_reading {width:50rem;text-align: center;position: absolute}
+#div_in_reading table{margin: auto;width: 20rem;table-layout: fixed}
+#div_in_reading div{width: 100%;overflow: auto}
 
 td{width: 1rem}
