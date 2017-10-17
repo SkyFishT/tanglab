@@ -23,6 +23,7 @@ var menu = {
 var cur_href = document.location.href;//主机+端口+路径
 var cur_path = document.location.pathname;//路径
 var path_nums = cur_path.split('/');
+console.log(path_nums[0]+","+path_nums[1]+","+path_nums[2]);
 //位置元素创建与添加
 var position = document.getElementById("position");
 var a_pos1 = document.createElement("a"), a_pos2 = document.createElement("a"), a_pos3 = document.createElement("a");
@@ -32,22 +33,26 @@ a_pos3.setAttribute("href", cur_href);
 var text_pos1 = document.createTextNode("主页");
 a_pos1.appendChild(text_pos1);
 position.appendChild(a_pos1);
-
+console.log("path_length:"+path_nums.length);
 if (path_nums[1] == "admin") {//当path为/admin时
     position.firstElementChild.innerHTML = menu[path_nums[1]];
     a_pos1.setAttribute("href", cur_href.substring(0, cur_href.length - cur_path.length) + "/admin");
     if (path_nums.length == 3) {//当path为/admin/path时
         var text_pos2 = document.createTextNode("/" + sub_menus[path_nums[1]][path_nums[2]]);
+
         a_pos2.appendChild(text_pos2);
         position.appendChild(a_pos2);
     }
 }
 else if (path_nums.length == 3) {//当Path为/path1/path2时，path_nums被'/'分成3部分
+    console.log("enter when path splited to 3");
     var text_pos2 = document.createTextNode("/" + menu[path_nums[1]]);
+    console.log(menu[path_nums[1]]);
     a_pos2.appendChild(text_pos2);
     position.appendChild(a_pos2);
 
     var text_pos3 = document.createTextNode("/" + sub_menus[path_nums[1]][path_nums[2]]);
+    console.log(sub_menus[path_nums[1]][path_nums[2]]);
     a_pos3.appendChild(text_pos3);
     position.appendChild(a_pos3);
 }

@@ -8,11 +8,21 @@
 {% endblock %}
 </head>
 <body>
+{% if messages %}
+<ul class="messages">
+    {%for message in messages %}
+    <li{%if message.tags %} class="{{ message.tags }}"{% endif %}>{{message }}</li>
+    {%endfor %}
+</ul>
+{% endif %}
+
 {% block pop_layer %}
 {% endblock %}
+
 {% block nav %}
 {% include 'nav.html' %}
 {% endblock %}
+
 <div id="content" >
     <div id="position">
         当前位置：
@@ -29,7 +39,9 @@
 </div>
 <script src="/static/js/layout.js">
 </script>
+
 {% block app_sp %}
 {% endblock %}
 </body>
+
 </html>

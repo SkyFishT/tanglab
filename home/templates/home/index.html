@@ -8,9 +8,9 @@
 
 {% block content %}
 <div id="home_pic"></div>
-<div id="home_msg"><div>新闻</div>
+<div id="home_msg"><div>Welcome to TangLab Home!</div>
     <ul><div>{{ home_msg }}</div>
-        {% for msgs in home_msg %}
+        {% for msgs in home_msgs %}
             <li>{{ msgs }}</li>
         {% endfor %}
     </ul>

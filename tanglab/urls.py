@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^administration/', admin.site.urls),
     url(r'^$', home_views.index, name='home'),
     # 关于我们
-    url(r'^about/about', include("about.urls")),
+    url(r'^about/', include("about.urls")),
     # 最新消息
     url(r'^news/', include("news.urls")),
     # 学术研究

@@ -1,9 +1,29 @@
 {% extends 'base.html' %}
 
+{% block app_theme %}
+    <link rel="stylesheet" type="text/css" href="/static/css/students_theme.css">
+{% endblock %}
+
 {% block title %}教学与人才培养{% endblock %}
 
 {% block content %}
-    <div id="in_reading_list">
-
+    <div id="div_in_reading"><h2>在读学生名单</h2>
+        <table >
+            <tr>
+                <th>姓名</th>
+                <th>在读</th>
+                <th>入学年份</th>
+                <th>学历</th>
+            </tr>
+            {% for item in in_reading %}
+                <tr>
+                    <td><div>{{ item.name }}</div></td>
+                    <td><div>{{ item.in_reading }}</div></td>
+                    <td><div>{{ item.enrollment }}</div></td>
+                    <td><div>{{ item.degree }}</div></td>
+                </tr>
+            {% endfor %}
+        </table>
     </div>
+
 {% endblock %}

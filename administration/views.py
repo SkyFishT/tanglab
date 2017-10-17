@@ -23,7 +23,6 @@ def manage_achievement(request):
 
 
 def manage_students(request):
-    print(1)
     stu = Students.objects.all()
     if request.method == 'POST':
         form = StuForm(request.POST)
