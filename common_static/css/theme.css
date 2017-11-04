@@ -4,10 +4,10 @@
 默认宽度960px
 */
 /*标签选择器*/
-body{width: 96rem;text-align: center;}
+body{width: 96rem;text-align: center;  background-color: #B6C5d8;margin: auto}
 a{text-decoration: none;}
 /*id选择器*/
-#nav{margin: 4rem auto; width: 60rem;height: 10rem;}
+#nav{margin: 0rem auto; width: 60rem;height: 20rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/banner.png") no-repeat}
 #content{margin: 4rem auto; width: 60rem; _height:20rem;min-height: 20rem }
 #menu{float: left;width: 10rem;position: fixed;}
 #details{width: 50rem;margin-left: 10rem;_height:200rem;min-height: 200rem}
@@ -15,7 +15,9 @@ a{text-decoration: none;}
 #position a{color: black}
 #position a:visited{color: black}
 #position a:hover{color: grey}
+#banner{margin:0rem auto;width:60rem;height:30rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/background.png") no-repeat}
 /*类选择器*/
+.text{text-align: left;text-indent: 2rem}
 .ul_menu{list-style: none;padding: 0;margin: 2rem 0;text-align: left;}
 .ul_menu>li{font-size: 0.75rem;}
 .ul_menu>li:first-child{margin-top: 1rem}
@@ -27,7 +29,10 @@ a{text-decoration: none;}
 .abs{position: absolute;}
 .ul_nav{list-style: none;padding: 0rem;}
 .li_nav{float: left;text-align: center;width: 10rem}
-.li_nav>div{background: lightskyblue;width: 10rem;}
+.li_nav>div{background-color:#B6C5d8;;width: 10rem;color: black}
+.li_nav>div:hover {color: #857283}
+.ul_none_style{list-style: none ;text-align: left}
+.ul_none_style li{text-align: left;white-space:nowrap;}
 .ul_nav_content{list-style: none;padding: 0rem;display: none;}
 .ul_nav_content>li{white-space:nowrap;}
 .ul_nav_content>li div{width: 8rem;text-align: center;margin: auto;width: 8rem;background-color: darkgray}
@@ -35,5 +40,3 @@ a{text-decoration: none;}
 .ul_nav_content>li div a:visited{color: white}
 .ul_nav_content>li div a:hover{color: red}
 .li_nav:hover .ul_nav_content{display: block;}
-
-

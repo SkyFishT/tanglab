@@ -3,7 +3,22 @@
 {% block title %}学术研究{% endblock %}
 
 {% block content %}
-<div>
-专利清单
-</div>
+    <div id="div_graduates"><h2>专利清单</h2>
+        <table >
+            <tr>
+                <th>发表时间</th>
+                <th>状态</th>
+                <th>专利名称</th>
+                <th>发明人</th>
+            </tr>
+            {% for item in patents %}
+                <tr>
+                    <td><div>{{ item.time }}</div></td>
+                    <td><div>{{ item.status }}</div></td>
+                    <td><div>{{ item.patent_name }}</div></td>
+                    <td><div>{{ item.inventor }}</div></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
 {% endblock %}

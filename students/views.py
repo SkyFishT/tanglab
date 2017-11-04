@@ -6,7 +6,6 @@ from students.models import Students
 
 def in_reading(request):
     in_reading = Students.objects(in_reading="TRUE")
-    print(type(Students.objects))
     return render(request,'students/in_reading.html',{'in_reading':in_reading})
 
 def graduates(request):

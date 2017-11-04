@@ -1,9 +1,28 @@
 {% extends 'base.html' %}
 
+{% block app_theme %}
+    <link rel="stylesheet" type="text/css" href="/static/css/academic_theme.css">
+{% endblock %}
+
 {% block title %}学术研究{% endblock %}
 
 {% block content %}
-    <div>
-    论文清单
+    <div id="div_graduates"><h2>论文清单</h2>
+        <table >
+            <tr>
+                <th>发表时间</th>
+                <th>论文名称</th>
+                <th>作者</th>
+                <th>等级</th>
+            </tr>
+            {% for item in theses %}
+                <tr>
+                    <td><div>{{ item.time }}</div></td>
+                    <td><div>{{ item.name }}</div></td>
+                    <td><div>{{ item.authors }}</div></td>
+                    <td><div>{{ item.rank }}</div></td>
+                </tr>
+            {% endfor %}
+        </table>
     </div>
 {% endblock %}
