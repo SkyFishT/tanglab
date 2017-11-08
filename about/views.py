@@ -17,3 +17,7 @@ def members(request):
 #联系我们
 def contact(request):
     return render(request, 'about/contact.html',{'main_menu':"关于我们",'sub_menus':sub_menus,'position':"contact"})
+
+#tangcard
+def tangcard(request):
+    return render(request, 'about/tangcard.html')
