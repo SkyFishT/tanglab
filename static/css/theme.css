@@ -4,7 +4,7 @@
 默认宽度960px
 */
 /*标签选择器*/
-body{width: 96rem;text-align: center;  background-color: #B6C5d8;margin: auto}
+body{width: 96rem;text-align: center;  background-color: white;margin: auto}
 a{text-decoration: none;}
 /*id选择器*/
 #nav{margin: 0rem auto; width: 60rem;height: 20rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/banner.png") no-repeat}
@@ -16,6 +16,9 @@ a{text-decoration: none;}
 #position a:visited{color: black}
 #position a:hover{color: grey}
 #banner{margin:0rem auto;width:60rem;height:30rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/background.png") no-repeat}
+#records a:link{color: black}
+#records a:visited{color: black}
+#div_proj_content p,b{text-align: left}
 /*类选择器*/
 .text{text-align: left;text-indent: 2rem}
 .ul_menu{list-style: none;padding: 0;margin: 2rem 0;text-align: left;}
