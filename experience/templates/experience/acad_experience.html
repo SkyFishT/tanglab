@@ -2,6 +2,18 @@
 
 {% block title %}他山之石{% endblock %}
 
+{% block app_theme %}
+    <link rel="stylesheet" type="text/css" href="/static/css/exp_theme.css">
+{% endblock %}
+
 {% block content %}
-学术心得转载
+<div class="div_list" id="exp_content">
+{% for item in experience %}
+    <div onclick="loadExpContent(event)">{{ item.name }}</div>
+{% endfor %}
+</div>
+{% endblock %}
+
+{% block app_sp %}
+<script src="/static/js/exp_io.js"></script>
 {% endblock %}
