@@ -1,0 +1,3 @@
+#exp_content{margin: 2rem auto;text-align: left}
+.div_list div{cursor: pointer;border-bottom: 2px dashed;margin: 1rem 0}
+.div_list div:hover{color: purple}

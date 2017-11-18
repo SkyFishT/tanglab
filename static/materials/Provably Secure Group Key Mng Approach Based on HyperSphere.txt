@@ -1,0 +1,6 @@
+Provably Secure Group Key Management Approach Based upon Hyper-Sphere<br/>
+Journal: IEEE Trans Parallel and Distributed Systems<br/>
+Authors: Shaohua Tang, Lingling Xu, Niu Liu, et al.<br/>
+DOI information: 10.1109/TPDS.2013.2297917  <br/>
+Date to publish online: Jan 16, 2014  <br/>
+Paper Published Online; Early Access PDF download; Export BIB citation;<br/>
