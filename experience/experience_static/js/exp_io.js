@@ -16,7 +16,8 @@ var back_button = document.createElement("button");
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
-			exp_content.innerHTML=xmlhttp.responseText;
+			exp_content.innerHTML="题目："+title+"<br/><br/>"+xmlhttp.responseText;
+			console.log(title+"<br/>"+xmlhttp.responseText);
 		}
 	};
 	xmlhttp.open("GET","/static/materials/"+title+".txt",true);
