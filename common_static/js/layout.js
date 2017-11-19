@@ -23,7 +23,6 @@ var menu = {
 var cur_href = document.location.href;//主机+端口+路径
 var cur_path = document.location.pathname;//路径
 var path_nums = cur_path.split('/');
-console.log(path_nums[0]+","+path_nums[1]+","+path_nums[2]);
 //位置元素创建与添加
 var position = document.getElementById("position");
 var a_pos1 = document.createElement("a"), a_pos2 = document.createElement("a"), a_pos3 = document.createElement("a");
@@ -86,4 +85,13 @@ if (path_nums.length == 2) {//当Path为'/path1'或者'/'时，path_nums被'/'�
     document.getElementById("details").style.width = "60rem";
     document.getElementById("details").style.marginLeft = "0rem";
 }
+//导航栏项添加点击事件（为手机端服务）
+var li_navs = document.getElementsByClassName("li_nav");//所有导航栏项元素
+var i=0;//计数
+for(;i<li_navs.length;i++ ){
+    li_navs[i].onclick = function (event) {
+        event.srcElement.childNodes[0].display = "block";
+    }
+}
+
 
