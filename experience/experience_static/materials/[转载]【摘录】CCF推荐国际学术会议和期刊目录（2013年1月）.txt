@@ -2,5 +2,5 @@
 本目录包括如下10个领域的重要国际学术会议及期刊：1）计算机系统与高性能计算、2）计算机网络、3）网络与信息安全、4）软件工程/系统软件/程序设计语言、5）数据库/数据挖掘/内容检索、6）计算机科学理论、7）计算机图形学与多媒体、8）人工智能与模式识别、9）人机交互与普适计算、10）前沿/交叉/综合等，供国内高校和科研单位作为学术评价时的参考。<br/>
 目录中，刊物和会议分为A、B、C三档。A类指国际上极少数的顶级刊物和会议，鼓励我国学者去突破；B类指国际上著名和非常重要的会议、刊物，有重要的学术影响，鼓励国内同行投稿；C类指国际学术界所认可的重要会议和刊物；其中，会议论文指“Full paper”或“regular paper”，会议上发表的Short paper, Demo paper, Technical Brief, summary等均不计入，所列刊物列表中，没有收入magazine。<br/>
 详情可访问：<br/>
-1）WEB方式：    http://www.ccf.org.cn/sites/ccf/paiming.jsp<br/>
-2）PDF下载：    http://www.ccf.org.cn/sites/paiming/中国计算机学会推荐国际刊物会议列表2012.pdf<br/>
+1）WEB方式：    <a href="http://www.ccf.org.cn/sites/ccf/paiming.jsp">http://www.ccf.org.cn/sites/ccf/paiming.jsp</a><br/>
+2）PDF下载：    <a href="http://www.ccf.org.cn/ccf/contentcore/resource/download?ID=32826">http://www.ccf.org.cn/sites/paiming/中国计算机学会推荐国际刊物会议列表2012.pdf</a><br/>

@@ -94,4 +94,3 @@ for(;i<li_navs.length;i++ ){
     }
 }
 
-
