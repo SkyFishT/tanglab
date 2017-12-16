@@ -4,18 +4,18 @@
 默认宽度960px
 */
 /*标签选择器*/
-body{width: 96rem;text-align: center;  background-color: white;margin: auto}
+body{position:relative;text-align: center;  background-color: white;margin: auto;display: block;background-color: #f6f6f6}
 a{text-decoration: none;}
 /*id选择器*/
-#nav{margin: 0rem auto; width: 60rem;height: 20rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/banner.png") no-repeat}
+#banner{margin: 0rem auto; width: 60rem;height: 31.7rem;}
+#nav{margin: 0rem auto; width: 60rem;height: 5rem;}
 #content{margin: 4rem auto; width: 60rem; _height:20rem;min-height: 20rem }
-#menu{float: left;width: 10rem;position: fixed;}
+#menu{float: left;width: 10rem;position: relative;}
 #details{width: 50rem;margin-left: 10rem;_height:200rem;min-height: 200rem}
 #position{font-size: 0.7rem;text-align: left}
 #position a{color: black}
 #position a:visited{color: black}
 #position a:hover{color: grey}
-#banner{margin:0rem auto;width:60rem;height:30rem;background-size: auto auto;background-position: 50% 100%;background: url("/static/icon/background.png") no-repeat}
 #records a:link{color: black}
 #records a:visited{color: black}
 #div_proj_content p,b{text-align: left}
@@ -41,5 +41,5 @@ a{text-decoration: none;}
 .ul_nav_content>li div{width: 8rem;text-align: center;margin: auto;width: 8rem;background-color: darkgray}
 .ul_nav_content>li div a:link{text-decoration: none;color: white}
 .ul_nav_content>li div a:visited{color: white}
-.ul_nav_content>li div a:hover{color: red}
+.ul_nav_content>li div a:hover{color: lightblue }
 .li_nav:hover .ul_nav_content{display: block;}
