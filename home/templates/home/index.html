@@ -7,11 +7,22 @@
 {% block title %}首页{% endblock %}
 
 {% block content %}
-<div id="home_pic"></div>
-<div id="home_msg"><div>Welcome to TangLab Home!</div>
-    <ul style="list-style: none"><div>{{ home_msg }}</div>
-        {% for msgs in home_msgs %}
-            <li>{{ msgs }}</li>
+<div id="home_pic"><div>照片</div>
+</div>
+<div id="home_msg"><img style="float: left;padding: 1rem 0.5rem" src="/static/icon/notice_icon.png"/><div style="padding: 1rem 0rem">实验室公告</div>
+    <ul style="list-style: none">
+        {% for msg in home_msgs %}
+            <li>{{ msg.msg }}</li>
+        {% endfor %}
+    </ul>
+</div>
+<div id="home_intro"><img  style="float: left;padding: 1rem 0.5rem" src="/static/icon/brief_icon.png"/><div style="padding: 1rem 0rem">实验室简介</div>
+    <div style="padding: 1rem 0.5rem;text-indent: 2rem">华南理工大学信息安全团队实验室依托于计算机科学与工程学院，成立于 1998 年，得到了国家自然基金、科技部、教育部的支持，目前拥有一支由多学科高度交叉的较完整的研究队伍。经过近20年的发展，逐步形成自己的特色和研究方向，近年来紧紧围绕国家、广东省和学校的发展战略目标，依托广东省信息安全技术工程技术研究中、教育部近距离无线通信与网络工程技术研究中心等科研机构，开展物联网和云计算安全、抗量子密码及密码学应用、可信软件与测试等方向的研究，已获取教育部和广东省科技进步二等奖2项，广东省科技进步三等奖2项。承担一大批国家、省部级和企业合作项目，发表高水平学术论文数百篇，获授权专利数十件。</div>
+</div>
+<div id="home_achieve"><img  style="float: left;padding: 1rem 0.5rem" src="/static/icon/achieve_icon.png"/><div style="padding: 1rem 0rem">学术成果</div>
+    <ul style="list-style: none">
+        {% for achieve in home_achieve %}
+            <li>{{ achieve.achieve }}</li>
         {% endfor %}
     </ul>
 </div>

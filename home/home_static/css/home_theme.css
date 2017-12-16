@@ -1,3 +1,5 @@
-#home_pic {height: 12rem;}
-
-#home_msg ul{padding: 0;}
+#home_pic,#home_msg{width:29.8rem;height: 25rem;border: solid;border-width: 0.1rem;margin: 2rem 0}
+#home_pic{float: left;}
+#home_msg{float: right}
+#home_intro,#home_achieve{width: 60rem;clear: both;text-align: left;border: solid;margin: 2rem 0}
+#home_msg div,ul{text-align: left}
