@@ -63,3 +63,7 @@ function btn_stu_del(event) {
     else {
     }
 }
+
+function btn_pop_exit(){
+    pop_layer.style.display = "none";
+}

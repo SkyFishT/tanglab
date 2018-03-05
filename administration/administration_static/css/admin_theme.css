@@ -8,7 +8,9 @@
 #div_graduates>table div{width: 100%;overflow: auto;}
 #div_graduates button{font-size: 1rem;}
 #btn_stu_add{position:relative;left:20rem;}
-#pop_layer{position:fixed;text-align: center;width: 96rem;background-color: white;display: none;}
+#pop_layer{position:fixed;text-align: center;width: 30rem;height:50rem;background-color: white;display: none;
+    margin: auto;left:0;right: 0;}
+#pop_exit{position: relative;left: 10rem;top:5rem;font-size: 1rem}
 #form_stu_edit {width: 25rem;margin: 10rem auto }
 /*类选择器*/
 .form_list{margin: auto;text-align: center}

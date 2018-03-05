@@ -6,6 +6,7 @@
 
 {% block pop_layer %}
     <div id="pop_layer">
+        <button id="pop_exit" onclick="btn_pop_exit()">exit</button>
         <form id="form_stu_edit" class="form_list" method="post" action="">{% csrf_token %}
             {{ StuForm }}
             <input type="submit" value="submit"/>
