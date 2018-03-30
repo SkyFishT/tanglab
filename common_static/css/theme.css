@@ -21,7 +21,7 @@ a{text-decoration: none;}
 #div_proj_content p,b{text-align: left}
 /*类选择器*/
 .text{text-align: left;text-indent: 2rem}
-.ul_menu{list-style: none;padding: 0;margin: 2rem 0;text-align: left;}
+.ul_menu{list-style: none;padding: 0;margin: 2rem 0;text-align: left;position: fixed}
 .ul_menu>li{font-size: 0.75rem;}
 .ul_menu>li:first-child{margin-top: 1rem}
 .ul_menu>div> a{color: black;}
